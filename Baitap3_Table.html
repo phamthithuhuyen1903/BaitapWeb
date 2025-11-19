@@ -1,5 +1,51 @@
 <head>
     <title>Quản lý sinh viên</title>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+
+        h2 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        table {
+
+            margin: auto;
+            border-collapse: collapse;
+        }
+
+        thead th {
+            background-color: white;
+            color: red;
+            padding: 10px;
+        }
+
+        tbody td {
+            background-color: white;
+            color: blueviolet;
+
+        }
+
+        tfoot td {
+            background-color: lightyellow;
+            color: darkred;
+            font-weight: bold;
+        }
+
+        .khoa {
+            background-color: lightgray;
+            font-weight: bold;
+            color: green;
+        }
+
+        .sum {
+            background-color: yellow;
+            font-weight: bold;
+            color: brown;
+        }
+    </style>
 </head>
 <h2>QUẢN LÝ SINH VIÊN</h2>
 <table border="1">
@@ -13,7 +59,7 @@
     </thead>
     <tbody>
         <tr>
-            <td colspan="4">Khóa A</td>
+            <td colspan="4" class="khoa">Khóa A</td>
         </tr>
         <tr>
             <td>1</td>
@@ -28,7 +74,7 @@
         </tr>
 
         <tr>
-            <td colspan="4">Khóa B</td>
+            <td colspan="4" class="khoa">Khóa B</td>
         </tr>
         <tr>
             <td>3</td>
@@ -45,7 +91,7 @@
     </tbody>
     <tfoot>
         <tr>
-            <td colspan="2">Tổng cộng</td>
+            <td colspan="2" class="sum">Tổng cộng</td>
             <td>7.5</td>
             <td>Khá</td>
         </tr>
